@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/ziti.js">
+</script>
+
+
+<title>注册</title>
+</head>
+
+<body>
+<nav class="navbar">
+  <a href="#" class="befor"></a>
+  <p class="mavbar_zhuce">注册</p>
+  <a href="javascript:" class="next" id="next">下一步</a>
+</nav>
+<form class="childInformation" action="" method="" id="information">
+<div class="mian_1">
+  <p class="mian_1_child">孩子信息</p>
+           <div class="childname" id="child_name">
+              <span>姓名：</span>
+              <input type="text" name="childname" value="请输入您孩子的姓名"  onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999"  id="chlidname"/>
+              <i class="ok"></i>
+           </div>
+           <div class="childsex">
+                  <span>性别：</span>
+                  <select name="sex">
+                      <option value="男" selected>男</option>
+                      <option value="女">女</option>
+                  </select>
+           </div>
+           <div class="childage">
+                  <span>年龄：</span>
+                  <select name="age">
+                      <option value="1岁">1岁</option>
+                      <option value="2岁">2岁</option>
+                      <option value="3岁">3岁</option>
+                      <option value="4岁">4岁</option>
+                      <option value="5岁">5岁</option>
+                      <option value="6岁">6岁</option>
+                      <option value="7岁">7岁</option>
+                      <option value="8岁">8岁</option>
+                      <option value="9岁">9岁</option>
+                      <option value="10岁">10岁</option>
+                      <option value="11岁">11岁</option>
+                      <option value="12岁">12岁</option>
+                      <option value="13岁">13岁</option>
+                      <option value="14岁">14岁</option>     
+                  </select>
+           </div>
+           <div class="childhobby">
+              <span>爱好：</span>
+              <input type="text" id="childaihao" value="请填写您孩子的爱好" name="aihao" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999"/>
+              <i class="ok"></i>
+           </div>
+           <div class="childschool">
+              <span>所在学校：</span>
+              <input type="text"  id="childschool" value="您孩子所在学校" name="school" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999"/>              <i class="ok"></i>
+           </div>
+           <div class="childcartoon">
+              <span>喜欢的卡通人物:</span>
+              <input type="text"  id="childkatong" value="喜欢的卡通人物" name="katong" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999"/>
+              <i class="ok"></i>
+           </div>
+           <div class="childbook">
+              <span>喜欢看的图书种类：</span>
+              <input type="text" id="childtushu" value="请填写孩子喜欢看的图书种类" name="tushu" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999"/>
+             <i class="ok"></i>
+           </div>
+</div>
+<div class="mian_2">
+  <p class="mian_2_parent">家长信息</p>
+          <div class="parentname" id="parent_name">
+                  <span>姓名：</span>
+                  <input type="text" value="请输入您的姓名"  onFocus=  "if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" id="parentname" name="parentname"/>
+                  <i class="ok"></i>
+          </div>
+          <div class="relation" id="relation">
+             <span>关系：</span>
+                 <input class="check" id="far" name="guanxi" type="radio" value="父亲" checked="checked"/><label for="far" name="relation">父亲</label>
+                 <input class="check" id="mon" name="guanxi" type="radio" value="母亲" /><label for="mon" name="relation" class="checked">母亲</label>
+                 <input class="check" id="oth" name="guanxi" type="radio"/ value="其他"><label for="oth" name="relation">其他:和孩子的关系</label>
+          </div>
+          <div class="parentjob" id="parent_job">
+                  <span>职业：</span>
+                  <input type="text" value="请输入您的职业"  onFocus=  "if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" id="job" name="job"/>
+                  <i class="ok"></i>
+          </div>
+          <div class="frequency">
+             <div class="frequency_ch">每年带孩子去剧场的次数:</div>
+                     <div class="frequency_list" id="frequency_list">
+                             <input class="tim" id="non" name="times" type="radio" value="基本没有" checked="checked"/><label for="non" name="times" value="基本没有" >基本没有</label>
+                 <input class="tim" id="som" name="times" type="radio" value="偶尔" /><label for="som" name="times" class="checked" value="偶尔">偶尔</label>
+                 <input class="tim" id="alw" name="times" type="radio" value="经常"/><label for="alw" name="times" value="经常">经常</label>
+                     </div>
+          </div>
+          <div class="questions" id="questions">
+               <input type="radio" id="know" class="question_btn" name="qestion" value="yes"/><label for="know" name="qestion" class="xuanze">是否知道儿童剧这种演绎形式</label>
+          </div>      
+       
+</div>
+<div class="mian_3">
+   <h3>为方便购票取票，请填写有票app注册信息</h3>
+   <p class="mian_3_zhuce">注册信息</p>
+          <div class="zhuce_nichen" id="zhuce_nichen_1">
+                  <span>姓名(昵称):</span>
+                  <input type="text" value="请输入您的昵称"  onFocus=  "if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999"id="nicheng" name="nicheng" />
+                  <i class="ok"></i>
+          </div>
+          
+          <div class="zhuce_num" id="zhuce_num">
+                  <span>身份证号：</span>
+                  <input type="text" value="请输入您的身份证号"  onFocus=  "if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" name="numid" />
+                  <i class="ok"></i>
+          </div>
+          <div class="zhuce_mobile" id="zhuce_mobile">
+                  <span>手机号：</span>
+                  <input type="text" value="请输入您的手机号"  onFocus=  "if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" name="phone" />
+                  <i class="ok"></i>
+          </div>
+          <div class="zhuce_yanzhengma" id="zhuce_yanzhengma">
+                  <span>验证码：</span>
+                  <input type="text" value="请输入验证码"  onFocus=  "if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" name="yanzheng" />
+                  <i class="ok"></i>
+                  <button type="button">短信验证码</button>
+          </div>
+          <div class="zhuce_mima" id="zhuce_mima">
+                  <span>输入密码：</span>
+                  <input type="password" value="请输入您的密码"  onFocus=  "if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" name="mima"/>
+                  <i class="ok"></i>
+          </div>
+          <div class="zhuce_mima_2" id="zhuce_mima_2">
+                  <span>确认密码：</span>
+                  <input type="password" value="请再次输入您的密码"  onFocus=  "if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" name="queren" />
+                  <i class="ok"></i>
+ </div>         </div>                
+</form>  
+<script type="text/javascript" src="js/biaodanyanzheng.js">
+</script> 
+                      
+</body>
+</html>
